@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #414B3B;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #FFF9F3;
+  list-style-type: none;
+  font-family: "Courier New", Courier, monospace;
+} 
+
+.navba {
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    padding: 1rem;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.items a {
+    text-decoration: none;
+    color: #FFF9F3;
+}
