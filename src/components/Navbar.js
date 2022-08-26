@@ -1,13 +1,14 @@
 
 import "../style/navbar.css";
+import CartWidget from "./CartWidget.js";
 
 const Navbar = () => {
 
     return (
         <header className="navbar">
             <img className='logo' src={require('../images/Ramé.png')} alt='logo rame' width='300' height='150'/>
-            <a href="#lateral" class="header-open">
-                <span class="fa-solid fa-bars"></span> 
+            <a href="#lateral" className="header-open">
+                <span className="fa-solid fa-bars"></span> 
             </a>
             <nav className="navba">
                 <ul>
@@ -15,14 +16,16 @@ const Navbar = () => {
                        <a href="#Menu">Menu</a>
                     </li>
                     <li className="items">
-                       <a href="#Productos" >Productos</a>
+                       <a href="#Productos" >Products</a>
                     </li>
                     <li className="items">
                        <a href="#Tips">Tips</a>
                     </li>
                     <li className="items">
-                       <a href="#Contacto">Contacto</a>
+                       <a href="#Contacto">Contact</a>
                     </li>
+                    <CartWidget />
+                    <a href="#close" className="closeenlace"><i className="fa-solid fa-circle-xmark"></i></a>
                 </ul>
             </nav>
         </header>
