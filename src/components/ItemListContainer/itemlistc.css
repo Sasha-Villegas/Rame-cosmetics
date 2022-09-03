@@ -3,9 +3,11 @@
     font-size: calc(26px + 2vmin);
     color: #FFF9F3;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center !important;
     margin-top: 1rem;
     background-color: #A7C396;
+    margin-bottom: 1rem;
 }
+

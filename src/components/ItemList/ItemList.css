@@ -1,0 +1,24 @@
+.ItemList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+    
+}
+
+.productos {
+    margin: 2.5rem;
+}
+
+.ItemList h2 {
+    color: #AB8742;
+    border: 1px solid #AB8742;
+    border-radius: 8px;
+    background-color: #FFEBEB;
+}
+
+.ItemList h3 {
+    border: 1px solid #8ca87c;
+    border-radius: 8px;
+}

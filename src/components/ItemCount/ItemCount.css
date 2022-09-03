@@ -1,0 +1,14 @@
+.ItemCountButton {
+    margin: 1rem;
+    background-color: #FFEBEB;
+    color: #AB8742;
+    border: 1px solid #AB8742;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+
+.ItemCountP {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:  calc(12px + 2vmin);
+}
