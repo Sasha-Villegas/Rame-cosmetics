@@ -22,3 +22,8 @@
     border: 1px solid #8ca87c;
     border-radius: 8px;
 }
+
+.ItemList img {
+    width: 250px;
+    margin: 5rem;
+}

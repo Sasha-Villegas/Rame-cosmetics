@@ -6,7 +6,7 @@ const Navbar = () => {
 
     return (
         <header className="navbar">
-            <img className='logo' src={require('../../images/Ramé.png')} alt='logo rame' width='300' height='150'/>
+            <img className='logo' src='images/Ramé.png' alt='logo rame' width='300' height='150'/>
             <a href="#lateral" className="header-open">
                 <span className="fa-solid fa-bars"></span> 
             </a>
