@@ -5,10 +5,14 @@
     margin: 1rem;
     justify-content: center;
     
+
+    
 }
 
 .productos {
     margin: 2.5rem;
+    border: 1px solid #414b3b;
+    border-radius: 8px;
 }
 
 .ItemList h2 {
@@ -25,5 +29,6 @@
 
 .ItemList img {
     width: 250px;
-    margin: 5rem;
+    margin:1rem 5rem;
+    
 }
