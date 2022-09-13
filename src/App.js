@@ -7,6 +7,8 @@ import Footer from './components/Footer/Footer.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
+
+
 function App() {
   return (
     <div className="App">
