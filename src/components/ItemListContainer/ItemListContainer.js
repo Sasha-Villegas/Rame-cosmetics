@@ -1,33 +1,43 @@
+import React from "react";
 import "./itemlistc.css";
-import {ItemCount} from "../ItemCount/ItemCount.js";
-import {data} from "../mockData/mockData.js";
-import { useEffect, useState } from "react";
-import ItemList from "../ItemList/ItemList.js";
+import { ItemCount } from "../ItemCount/ItemCount.js"
+import { data } from "../mockData/mockData"
+import { useEffect, useState } from "react"
+import ItemList from "../ItemList/ItemList"
+import { useParams } from "react-router-dom"
 
 const ItemListContainer = ({greeting}) => {
 
     const [productList, setProductList] = useState([]);
+    const {categoryName} = useParams();
 
+   
     useEffect(() => {
-        getProducts.then((response) => {
-           setProductList(response)
-        }).catch((error) => console.log(error))
-        }, [])
-
-    
-    
-    const getProducts = new Promise((resolve, reject) => {
-        setTimeout(() => {
-        resolve(data);}, 2000)
+      getProducts
+      .then((response)=>{filter(response)})
+    }, [categoryName])
+  
+    const filter = (response) => {
+      if (categoryName) {
+        setProductList(response.filter((item)=>item.category == categoryName))
+        console.log(categoryName);
+      }else {
+        setProductList(data)
+      }
+    }
+  
+  const getProducts = new Promise((resolve, reject) => {
+      setTimeout(()=> {
+        resolve(data)}, 1000)
     });
-
     
     return (
+        <>
          <div className="tittle">
             {greeting}
-          <ItemCount stock= {10} /> 
          <ItemList lista={productList} />
          </div>
+        </>
     );
 }
 

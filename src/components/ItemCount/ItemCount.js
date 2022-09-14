@@ -1,12 +1,12 @@
+import React from "react";
 import { useState } from 'react';
 import "./ItemCount.css"
 
 
-const ItemCount = (stock, initial, onAdd) => { 
+const ItemCount = ( {stock, initial, onAdd} ) => { 
 
-    
+    const [items, setitems] = useState(initial) 
 
-    const [items, setitems] = useState(initial)
 
     // LESS ITEMS
     const onRemove = () => { items  > 0 ? setitems(items-1) : alert('No hay mas productos disponibles');
@@ -28,25 +28,20 @@ const ItemCount = (stock, initial, onAdd) => {
     }
 
     return (
-
+        <>
             <div className = 'ItemCount'>
-                <h1 className = 'ItemCount-title'>Item Count</h1>
-                <p className = 'ItemCountP'>{items} </p>
+                <p className = 'ItemCountP'> Amount : {items} </p>
                 <div className = 'ItemCount-btn'>
                    <button onClick={onRemove} className = 'ItemCountButton'> - </button> 
                    <button onClick={onPlus} className ='ItemCountButton'> + </button>
                 </div>
-                <p className='ItemCountP'>Stock disponible:{stock-items} </p>
+                <p className='ItemCountP'>Available Stock:{stock-items} </p>
                 <div className='ItemCount-btn'>
-
-                    <button onClick={handleOnAdd} className = 'ItemCountButton'>Agregar al carrito</button>
-                </div>
-            
-            
-                <div className='ItemCount-btn'>    
-                  <button onClick={reset} className = 'ItemCountButton' > Reset</button>
+                    <button onClick={handleOnAdd} className = 'ItemCountButton'>Add to cart</button>
+                    <button onClick={reset} className = 'ItemCountButton' > Reset</button>
                 </div>
             </div>
+        </>
     )
 }   
 

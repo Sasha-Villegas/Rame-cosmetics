@@ -1,9 +1,10 @@
+import React from "react";
 import "../ItemList/ItemList.css";
-import { ItemCount } from "../ItemCount/ItemCount";
+import { ItemCount } from "../ItemCount/ItemCount.js";
 
-const Item = ({tittle, precio, img , stock}) => { 
+const Item = ({title, precio, img , stock}) => { 
 
-    const handleOnAdd = (cantidad) => {
+    const carrito = (cantidad) => {
         alert(`Agregaste ${cantidad} productos al carrito`);
     }
 
@@ -11,10 +12,10 @@ const Item = ({tittle, precio, img , stock}) => {
     return (
         <>
         <div className="productos">
-            <h2>{tittle} </h2>
-            <img className="img-product" src={img}  alt={tittle}/>
+            <h2> {title} </h2>
+            <img className="img-product" src={img}  alt={title}/>
             <h3> ${precio}USD</h3>
-            <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
+            <ItemCount initial={1} stock={stock} onAdd={carrito} />
         </div>
         </>
     )
