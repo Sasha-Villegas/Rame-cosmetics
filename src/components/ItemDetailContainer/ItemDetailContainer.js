@@ -16,14 +16,14 @@ const ItemDetailContainer = () => {
   }).catch((error)=>console.log(error))
   }, [])
 
-const getItem = new Promise((resolve, reject) => {
-  setTimeout(()=> {
+  const getItem = new Promise((resolve, reject) => {
+    setTimeout(()=> {
     resolve(data);}, 1000)
   });
 
   return (
     <>
-      {producto && <ItemDetail  id={producto.id}  title={producto.title} category={producto.category} precio={producto.precio} img={producto.img} />}
+      {producto && <ItemDetail id={producto.id}  title={producto.title} category={producto.category} precio={producto.precio} img={producto.img} /> } 
     </>
   )
 }

@@ -1,0 +1,25 @@
+.footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #414B3B; 
+    color: #FFF9F3 !important;   
+}
+
+.ft-icon {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.ftt-icon {
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.ft-icons {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}

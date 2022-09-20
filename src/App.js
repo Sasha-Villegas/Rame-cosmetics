@@ -7,10 +7,12 @@ import Footer from './components/Footer/Footer.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {CartContext} from "./context/cartContext";
 
 
 function App() {
   return (
+    <CartContext.Provider value={[]}>
     <BrowserRouter>
     <div className="App">
         <Navbar />
@@ -20,8 +22,10 @@ function App() {
        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
       </Routes>
+      <Footer />
     </div>
     </BrowserRouter>
+    </CartContext.Provider>
   );
 }
 

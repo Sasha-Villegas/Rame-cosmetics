@@ -1,6 +1,5 @@
 import React from "react";
 import "./itemlistc.css";
-import { ItemCount } from "../ItemCount/ItemCount.js"
 import { data } from "../mockData/mockData"
 import { useEffect, useState } from "react"
 import ItemList from "../ItemList/ItemList"

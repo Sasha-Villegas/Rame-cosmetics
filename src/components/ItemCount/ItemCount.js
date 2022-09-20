@@ -3,42 +3,42 @@ import { useState } from 'react';
 import "./ItemCount.css"
 
 
-const ItemCount = ( {stock, initial, onAdd} ) => { 
+const ItemCount = ( {stock, agregar} ) => { 
 
-    const [items, setitems] = useState(initial) 
+    const [cantidad, setCantidad] = useState(0) 
 
 
     // LESS ITEMS
-    const onRemove = () => { items  > 0 ? setitems(items-1) : alert('No hay mas productos disponibles');
+    const onRemove = () => { cantidad  > 0 ? setCantidad(cantidad-1) : alert('No hay mas productos disponibles');
     };
 
     // PLUS ITEMS
     const onPlus = () => {
-        items < stock ? setitems(items+1) : alert('Ya selecciono el maximo de productos');
+        cantidad < stock ? setCantidad(cantidad+1) : alert('Ya selecciono el maximo de productos');
     };
 
     //AGREGAR ITEMS 
-    const handleOnAdd = () => {
-        if (items <= stock) onAdd(items);
+    const confirm = () => {
+        if (cantidad === 0) {
+        return
+    } else {
+        agregar(cantidad)
+
+    }
     };
 
-    // RESET ITEMS
-    const reset = () => {  
-        setitems(0)
-    }
 
     return (
         <>
             <div className = 'ItemCount'>
-                <p className = 'ItemCountP'> Amount : {items} </p>
+                <p className = 'ItemCountP'> Amount : {cantidad} </p>
                 <div className = 'ItemCount-btn'>
                    <button onClick={onRemove} className = 'ItemCountButton'> - </button> 
                    <button onClick={onPlus} className ='ItemCountButton'> + </button>
                 </div>
-                <p className='ItemCountP'>Available Stock:{stock-items} </p>
+                <p className='ItemCountP'>Available Stock:{stock-cantidad} </p>
                 <div className='ItemCount-btn'>
-                    <button onClick={handleOnAdd} className = 'ItemCountButton'>Add to cart</button>
-                    <button onClick={reset} className = 'ItemCountButton' > Reset</button>
+                    <button onClick={confirm} className = 'ItemCountButton'>Add to cart</button>
                 </div>
             </div>
         </>
