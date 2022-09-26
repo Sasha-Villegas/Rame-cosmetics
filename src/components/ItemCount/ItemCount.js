@@ -9,7 +9,7 @@ const ItemCount = ( {stock, agregar} ) => {
 
 
     // LESS ITEMS
-    const onRemove = () => { cantidad  > 0 ? setCantidad(cantidad-1) : alert('No hay mas productos disponibles');
+    const onRemove = () => { cantidad  > 0 ? setCantidad(cantidad -1) : alert('No hay mas productos disponibles');
     };
 
     // PLUS ITEMS

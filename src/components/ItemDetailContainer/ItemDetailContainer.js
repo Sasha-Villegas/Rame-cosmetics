@@ -1,29 +1,33 @@
 import React from "react";
 import { useEffect, useState } from "react"
-import ItemDetail from "../ItemDetail/ItemDetail.js";
-import { data } from "../mockData/mockData";
 import { useParams } from "react-router-dom";
+import ItemDetail from "../ItemDetail/ItemDetail";
+import { data } from "../mockData/mockData";
 
 
 const ItemDetailContainer = () => {
     
-  const [producto, setPoducto] = useState([]);
+  const [producto, setPoducto] = useState({});
   const {id} = useParams();
+  
 
 
   useEffect(() => {
-    getItem.then((response)=> {setPoducto(response.find(prod => prod.id === id))
-  }).catch((error)=>console.log(error))
-  }, [])
+    getItem
+    .then((response)=> {setPoducto(response.find(prod => prod.id === id))
 
-  const getItem = new Promise((resolve, reject) => {
-    setTimeout(()=> {
+  })
+    .catch((error)=>console.log(error))
+  }, [id])
+
+const getItem = new Promise((resolve, reject) => {
+  setTimeout(()=> {
     resolve(data);}, 1000)
   });
 
   return (
     <>
-      {producto && <ItemDetail id={producto.id}  title={producto.title} category={producto.category} precio={producto.precio} img={producto.img} /> } 
+      {producto && <ItemDetail  producto={producto}/>}
     </>
   )
 }

@@ -1,12 +1,20 @@
 import React from 'react';  
 import "../Navbar/navbar.css";
+import Badge from 'react-bootstrap/Badge';
+import { CartContext } from "../../context/CartContext";
+import { useContext } from "react";
+
 
 const CartWidget = () => {
 
-    return (
-        <div className="items">
-        <i className="fa-solid fa-cart-shopping"></i>
-        </div>
-    );
+  const {cart} = useContext(CartContext)
+
+  return (
+    <div>
+      <i className="fa-solid fa-cart-shopping carrito"></i>
+      <Badge bg="warning">{cart.reduce((acc, prod) => acc + prod.cantidad, 0)}</Badge>
+    </div>
+  )
 }
+
 export default CartWidget;

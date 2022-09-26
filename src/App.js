@@ -7,12 +7,12 @@ import Footer from './components/Footer/Footer.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {CartContext} from "./context/cartContext";
-
+import Cart from "./components/Cart/Cart.js";
+import CartProvider from './context/CartProvider';
 
 function App() {
   return (
-    <CartContext.Provider value={[]}>
+    <CartProvider>
     <BrowserRouter>
     <div className="App">
         <Navbar />
@@ -21,11 +21,13 @@ function App() {
        <Route path='/category/:categoryName' element={<ItemListContainer/>}/>
        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
        <Route path='/item/:id' element={<ItemDetailContainer/>}/>
+       <Route path='/cart' element={<Cart/>}/>
       </Routes>
       <Footer />
-    </div>
-    </BrowserRouter>
-    </CartContext.Provider>
+    </div>   
+    </BrowserRouter>   
+    </CartProvider>
+ 
   );
 }
 

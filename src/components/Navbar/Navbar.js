@@ -2,9 +2,13 @@ import React from "react";
 import "./navbar.css";
 import CartWidget from "../CartWidget/CartWidget.js";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+    const {cart} = useContext(CartContext)
 
     return (
         <header className="navbar">
@@ -37,6 +41,13 @@ const Navbar = () => {
                     <CartWidget />
                     <a href="#close" className="closeenlace"><i className="fa-solid fa-circle-xmark"></i></a>
                 </ul>
+                <div>
+                        {cart.length !== 0 ? 
+                        <Link to={`/cart`}> 
+                            <CartWidget/>
+                        </Link>
+                        : null }
+                    </div>
             </nav>
         </header>
     );
