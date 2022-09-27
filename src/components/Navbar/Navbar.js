@@ -38,16 +38,19 @@ const Navbar = (props) => {
                     <li className="items">
                        <Link to={`/category/Candles`}>Candles</Link>
                     </li>
+                    
                     <CartWidget />
-                    <a href="#close" className="closeenlace"><i className="fa-solid fa-circle-xmark"></i></a>
-                </ul>
-                <div>
+
                         {cart.length !== 0 ? 
                         <Link to={`/cart`}> 
                             <CartWidget/>
                         </Link>
                         : null }
-                    </div>
+
+                    
+                    <a href="#close" className="closeenlace"><i className="fa-solid fa-circle-xmark"></i></a>
+                </ul>
+                
             </nav>
         </header>
     );
