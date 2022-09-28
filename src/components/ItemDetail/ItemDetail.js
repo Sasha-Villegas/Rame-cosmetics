@@ -1,4 +1,5 @@
 import React from 'react';
+import "../ItemCount/ItemCount.css";
 import "./ItemDetail.css";
 import { ItemCount } from "../ItemCount/ItemCount";
 import { useState, useEffect, useContext } from "react";
@@ -6,7 +7,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
 
-const ItemDetail = ({producto, item}) => {
+const ItemDetail = ({producto}) => {
 
 const [count, setCount] = useState(0); 
 const [cargar, setCargar] = useState(false) 
@@ -33,16 +34,18 @@ const agregar = (cantidad) => {
   return(
     <>
     <div className="product-duplicado">
-          <h2>{item.title}</h2>
-          <img  src={item.img} alt={item.name} />
-          <h3>${item.precio}</h3>
-          
+      <div className= "producto">
+          <h2> {producto.title} </h2>
+          <img  src={producto.img} alt={producto.name} />
+          <h3>${producto.precio} USD</h3>
+      </div>  
+        
       {!mostrar && <ItemCount stock={producto.stock - count} agregar={agregar}/>}
      
-      {mostrar && <div className="botonesFinales">
-      <Link to={`/cart`}><button className="boton">Finish buying</button></Link>
-      <Link to={`/`}><button className="boton">Keep buying</button></Link>
-      <button onClick={()=>{setMostrar(false)}} className="boton">Add more</button>
+      {mostrar && <div className="ItemCountButton">
+      <Link to={`/cart`}><button className="ItemCountButton">Finish buying</button></Link>
+      <Link to={`/`}><button className="ItemCountButton">Keep buying</button></Link>
+      <button onClick={()=>{setMostrar(false)}} className="ItemCountButton">Add more</button>
       </div>}
     </div>
     </>

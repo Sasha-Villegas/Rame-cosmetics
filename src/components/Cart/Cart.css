@@ -1,21 +1,14 @@
-.carrito-Tarjeta {
-    margin:0px auto;
-    width: 350px;
-    border: solid rgb(197, 187, 187);
-    position: relative;
-    box-shadow: 0 10px 20px #b5b166;
+.cart {
+    font-family: 'Courier New', Courier, monospace !important;
     border-radius: 20px;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
-    background-color: rgb(120 108 82 / 50%);
-    margin-top: 3rem;
+    justify-content: center;
 }
 
-.carrito-Tarjeta h1{
+.cart h1{
+    font-family: 'Courier New', Courier, monospace !important;
     font-weight: 100;
     text-align: center;
     margin:0px auto;
@@ -23,128 +16,70 @@
     border-bottom: 1px solid #fff9f3 ;
 }
 
-.carrito-Body{
-    width: 90%;
+.cart-body{
+    font-family: 'Courier New', Courier, monospace !important;
     display: flex;
-    flex-direction: column;
     margin:0px auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 2.5rem;
+    border: 1px solid #414b3b;
+    border-radius: 8px;
+
 }
 
-.carrito-Producto{
-    display: inline-flex;
+.cart-product{
+    display: flex;
     align-items: center;
     height: fit-content;
+    flex-direction: column;
+    justify-content: center;
     
 }
 
-.carrito-Divisor{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 8rem;
-}
-.carrito-Info{
-width: 8rem;
-}
-
-.carrito-Icono{
-    width: 25px;
-    margin-right: 12px;
-    margin-bottom: 5px;
-}
-
-.carrito-Titulo {
+.cart{
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: calc(15px + 2vmin);
     color: #FFEBEB;
     margin-bottom: 5px;
     text-align: initial;
+
 }
 
-.carrito-Descripcion {
-    font-size: 15px;
-    opacity: .8;
-    margin-bottom: 3px;
+.cart-img{
+    width: 250px;
+    margin:1rem 5rem;
+}
+
+.cart-unit{
     color: #FFEBEB;
+    font-size: calc(10px + 2vmin);
+
 }
 
-.carrito-Imagen{
-height: 2.8cm;
-width: 0.8cm;
-margin: 1rem 2rem 1rem 2rem;
-    opacity: 1 !important;
-}
-
-.carrito-Footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center
-}
-
-.carrito-Cantidad{
-color: #A7C396;
-}
-.carrito-Precio {
-    color: #A7C396;
+.cart-price {
+    color: #FFEBEB;
     font-size: 22px;
     font-weight: 900;
     padding-top: 2px;
     margin-top: 4px;
 }
 
-.carrito-Boton {
-    position: relative;
-    z-index: 1;
-    float: right;
-    font-size: 13px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #8ca87c;
-    padding: 6px 6px;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    line-height: .95;
-    border: none;
-    background: none;
-    outline: none;
-    border: 1px solid #424b3b;
-    border-radius: 20px;
-    overflow: hidden;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.carrito-Boton:hover {
-    color: #FFEBEB !important;
-    border: 1px solid #FFEBEB !important;
-}
-
-.carrito-Mensaje{
+.cart-msm{
     margin: 25px 0 25px;
     color: #FFEBEB;
 }
 
-.carrito-Regreso{
-    margin: 25px 0 25px;
-    text-decoration: none;
-    font-size: x-large;
-    cursor: pointer;
-}
-
-.carrito-Total{
-    color: #A7C396;
+.cart-total{
+    color: black;
     font-size: 25px;
 }
 
-.badge-2{
-    position: relative;
-    font-weight: 100;
-    color: #8ca87c;
-    padding-left: 3px;
-    font-size: 12px;
-    border-radius: 4px;
-    top: -12px;
-    margin-left: 0px;
-    border-radius: 23rem;
+cart-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }

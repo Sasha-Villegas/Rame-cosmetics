@@ -1,7 +1,54 @@
 .product-duplicado{
-    border: 1px solid black;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.product-duplicado h2 {
+    font-size: calc(20px + 2vmin);
+    color: #AB8742;
+    border: 1px solid #AB8742;
+    border-radius: 8px;
+    background-color: #FFEBEB ;
+    
+}
+
+.product-duplicado h3 {
+    border: 1px solid #8ca87c;
+    border-radius: 8px;
+    color:#AB8742;
+    background-color: #FFEBEB;
+}
+
+.product-duplicado img {
+    width: 250px;
+    margin:1rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    border-radius: 8px;
+    
+}
+
+
+.productos {
+    margin: 2.5rem;
+    border: 2px solid #414b3b;
+    border-radius: 8px;
+}
+
+
+.ItemCountButton {
+    margin: 1rem;
+    background-color: #FFEBEB;
+    color: #AB8742;
+    border: 1px solid #AB8742;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
 }

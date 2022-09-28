@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="footer">
           <p className ="ftt-icon"> <i className="fa-solid fa-phone"></i> +54 9 2245 474376  </p>
           <p className="ft-icon"> <i className="fa-solid fa-shop"></i> Juana Manso 123, Buenos Aires</p>
-          <p className="ft-icons"> <i class="fa-brands fa-instagram"></i> @rame-cosmetics </p>
+          <p className="ft-icons"> <i className="fa-brands fa-instagram"></i> @rame-cosmetics </p>
         </div> 
         
     )    

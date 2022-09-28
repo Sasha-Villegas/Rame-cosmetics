@@ -2,7 +2,8 @@ import React from "react";
 import {useContext, useEffect, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import { Link } from "react-router-dom";
-import Badge from 'react-bootstrap/Badge';
+import "../ItemCount/ItemCount.css"
+import "./Cart.css";
 
 const Cart = () => {
 
@@ -26,42 +27,35 @@ const eliminarTodo = () => {
 }
 
   return (
-    <div className="carrito-Tarjeta">
-        <div className="carrito-Body">
-        <h1>Shopping cart</h1>
+    <div className="cart">
+      <h1>Shopping cart</h1>
+        <div className="cart-body">
+        
         
         {cart.map((item)=> (
-            <div className="carrito-Producto" key={item.id}>
-                <img className="carrito-Imagen" width={`70px`} height={`265px`} src={item.img} alt={item.title}/>
-                <div className="carrito-Info">
-              <div className="carrito-Divisor">
-                <h2 className="carrito-Titulo">{item.title}</h2>
-              </div>
-              <div className="carrito-Divisor">
-                <h3 className="carrito-Descripcion">{item.category}</h3>
-              </div>
-            </div>
-                <div className="carrito-Footer">
-                    <div className="carrito-Cantidad">{item.cantidad}</div>
-                    <h3 className="carrito-Precio">${item.precio}<span class="badge-2">/ Unit</span></h3>
-                    <button className="carrito-Boton" onClick={() => (eliminarUno(item.id))}>Put off</button>
-                </div>
+            <div className="cart-product" key={item.id}>
+                <img className="cart-img" src={item.img} alt={item.title}/>
+                <h2 className="cart">{item.title}</h2>
+                <h3 className="cart-category">{item.category}</h3>
+                <div className="cart-unit">{item.cantidad}</div>
+                <h3 className="cart-price">${item.precio}USD <span> /Unit</span></h3>
+                <button className="ItemCountButton" onClick={() => (eliminarUno(item.id))}>Put off</button>
+
             </div>
         ))} 
-        {/* <div className="carrito-Total">TOTAL</div> */}
+        </div>
+
         {cart.length === 0 ? (
         <>
-          <h2 className="carrito-Mensaje">There are no products in your cart</h2>
-          <Link to={`/`} className="carrito-Boton">Repurchase</Link>
+          <h2 className="cart-msm">There are no products in your cart</h2>
+          <Link to={`/`} className="ItemCountButton">Repurchase</Link>
         </> ) : 
         <>
-          <div className="carrito-Total">TOTAL : ${total}.-</div>
-          <button className="carrito-Boton" onClick={eliminarTodo} > Empty cart</button>
+          <div className="cart-total">TOTAL : ${total}USD .-</div>
+          
         </>
         }
-        
-        
-        </div>
+        <button className="ItemCountButton" onClick={eliminarTodo} > Empty cart</button>
     </div>
   )
 }
