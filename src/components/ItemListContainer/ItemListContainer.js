@@ -1,40 +1,47 @@
 import React from "react";
 import "./itemlistc.css";
-import { data } from "../mockData/mockData"
+// import { data } from "../mockData/mockData"
 import { useEffect, useState } from "react"
 import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
-
+import { getFirestore, getDocs, collection, query, where } from "firebase/firestore"
 
 const ItemListContainer = ({greeting}) => {
 
     const [productList, setProductList] = useState([]);
     const {categoryName} = useParams();
 
-   
     useEffect(() => {
-      getProducts
-      .then((response)=>{filter(response)})
+      getProducts()
     }, [categoryName])
+
   
-    const filter = (response) => {
+    const getProducts = () =>{
+      const db = getFirestore();
+      const querySnapshot = collection(db, `item`);
       if (categoryName) {
-        setProductList(response.filter((item)=>item.category == categoryName))
-        console.log(categoryName);
-      }else {
+        const queryFilter = query(querySnapshot, where("category", "==", categoryName))
+        getDocs(queryFilter)
+          .then((response)=> {
+          const data = response.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        })
         setProductList(data)
+      }).catch((err)=> console.log(err))
+      }else {
+        getDocs(querySnapshot)
+          .then((response)=> {
+          const data = response.docs.map((doc) => {
+          return { id: doc.id, ...doc.data() };
+        })
+        setProductList(data)
+      }).catch((err)=> console.log(err))
       }
-    }
-  
-  const getProducts = new Promise((resolve, reject) => {
-      setTimeout(()=> {
-        resolve(data)}, 1000)
-    });
     
+    }
     return (
         <>
          <div className="tittle">
-
             {greeting}
          <ItemList lista={productList} />
          </div>
@@ -43,5 +50,3 @@ const ItemListContainer = ({greeting}) => {
 }
 
 export default ItemListContainer;
-
-
