@@ -4,7 +4,7 @@ import "./ItemDetail.css";
 import { ItemCount } from "../ItemCount/ItemCount.js";
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
-import { CartContext } from "../../context/CartContext.js";
+import { CartContext } from "../../Context/CartContext.js";
 
 
 
