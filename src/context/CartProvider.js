@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from "react"
-import { CartContext } from "./CartContext"
+import { CartContext } from "./CartContext.js"
 import toast, { Toaster } from 'react-hot-toast';
 
 
@@ -37,7 +37,7 @@ const CartProvider = ({children}) => {
             setCart([...cart]);}
     }else{
         setCart([...cart, {...item, cantidad, stock}]);
-        toast (`We add ${cantidad}, ${item.title}`, {
+        toast (`We add ${cantidad}, ${item.title} to cart`, {
             icon: "✅ ",
             style: {
             borderRadius: '10px',
@@ -53,7 +53,6 @@ const deleteCarrito = (prodId) => {
     setCart(cart.filter((prod)=> prod.id !== prodId))
 }
 
-//Creo la función para vaciar el carrito completo
 const clearCarrito = () => {
     setCart([]);
 }

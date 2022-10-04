@@ -6,7 +6,6 @@ import "../ItemCount/ItemCount.css"
 import "./Cart.css";
 import toast, { Toaster } from 'react-hot-toast';
 import moment from 'moment';
-
 import {collection, addDoc, getFirestore } from "firebase/firestore";
 
 const Cart = () => {
@@ -64,10 +63,10 @@ const eliminarTodo = () => {
 }
 
 const buy = (event) => {
-  // Previene el comportamiento default de loformularios el cual recarga el sitio
+
   event.preventDefault();
   if (!values.name || !values.email) {
-    toast.error("complete los campos");
+    toast.error("Complete the fields");
   }else {
     createOrder();
     eliminarTodo();
