@@ -5,7 +5,7 @@ import './components/Navbar/navbar.css';
 import './components/ItemListContainer/itemlistc.css';
 import Footer from './components/Footer/Footer.js';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.js';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cart from "./components/Cart/Cart.js";
 import CartProvider from './context/CartProvider';

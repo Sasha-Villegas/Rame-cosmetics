@@ -2,7 +2,7 @@ import React from "react";
 import "./itemlistc.css";
 // import { data } from "../mockData/mockData"
 import { useEffect, useState } from "react"
-import ItemList from "../ItemList/ItemList"
+import ItemList from "../ItemList/ItemList.js"
 import { useParams } from "react-router-dom"
 import { getFirestore, getDocs, collection, query, where } from "firebase/firestore"
 
