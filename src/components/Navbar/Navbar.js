@@ -3,7 +3,7 @@ import "./navbar.css";
 import CartWidget from "../CartWidget/CartWidget.js";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-import { CartContext } from "../../Context/CartContext.js";
+import { CartContext } from "../../context/CartContext.js";
 
 
 const Navbar = (props) => {
