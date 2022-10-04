@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import "./ItemCount.css"
 
 
@@ -9,12 +10,12 @@ const ItemCount = ( {stock, agregar} ) => {
 
 
     // LESS ITEMS
-    const onRemove = () => { cantidad  > 0 ? setCantidad(cantidad -1) : alert('No hay mas productos disponibles');
+    const onRemove = () => { cantidad  > 0 ? setCantidad(cantidad -1) : toast.error('Can´t subtract any more!')
     };
 
     // PLUS ITEMS
     const onPlus = () => {
-        cantidad < stock ? setCantidad(cantidad+1) : alert('Ya selecciono el maximo de productos');
+        cantidad < stock ? setCantidad(cantidad+1) : toast.success('I have already selected the maximum number of products');
     };
 
     //AGREGAR ITEMS 
@@ -30,7 +31,9 @@ const ItemCount = ( {stock, agregar} ) => {
 
     return (
         <>
+        <Toaster position="top-right" reverseOrder={false}/>
             <div className = 'ItemCount'>
+            
                 <p className = 'ItemCountP'> Amount : {cantidad} </p>
                 <div className = 'ItemCount-btn'>
                    <button onClick={onRemove} className = 'ItemCountButton'> - </button> 

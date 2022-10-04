@@ -1,39 +1,56 @@
 import React from 'react';
 import { useState } from "react"
 import { CartContext } from "./CartContext"
+import toast, { Toaster } from 'react-hot-toast';
 
 
 
 const CartProvider = ({children}) => {
     const [cart, setCart] = useState([]);
 
+    const notify = () => toast('Good Job!',
+    {
+    style: {
+    borderRadius: '10px',
+    background: '#fff',
+    color: '#000',
+    },
+    });
 
-
-//Creo una función que agrega al carrito el producto, actualizando el stock y agregando cantidad
-
-const addCarrito = (item, cantidad, stock) => {
+    const addCarrito = (item, cantidad, stock) => {
     const existe = cart.find ((elemento) => elemento.id === item.id);
     if (existe) {
         if (existe.stock < cantidad){
-            alert (`We only have left in stock ${existe.stock}`)
+            toast (`We only have left in stock ${existe.stock}`, {
+            icon : " ⚠️ ",
+            style : {
+                borderRadius: '10px',
+                background: '#fff',
+                color: '#000',
+                fontsize: '12px',
+                },
+        });
+
         }else {
             existe.cantidad = existe.cantidad + cantidad;
             existe.stock = existe.stock - cantidad;
             setCart([...cart]);}
     }else{
         setCart([...cart, {...item, cantidad, stock}]);
+        toast (`We add ${cantidad}, ${item.title}`, {
+            icon: "✅ ",
+            style: {
+            borderRadius: '10px',
+            background: '#fff',
+            color: '#000',
+            fontsize: '12px',
+            },
+        })
     }
 }
 
-const deleteCarrito = (prodId) =>{
-    const item = cart.findIndex((prod) => prod.id === prodId) 
-    let nuevoArreglo = [];
-    cart.forEach(prod=> {
-        if (prod.id !== prodId){
-            nuevoArreglo.push(prod)
-        }
-    })
-    setCart(nuevoArreglo);
+const deleteCarrito = (prodId) => {
+    setCart(cart.filter((prod)=> prod.id !== prodId))
 }
 
 //Creo la función para vaciar el carrito completo
@@ -44,6 +61,7 @@ const clearCarrito = () => {
 
   return (
     <CartContext.Provider value={{cart, addCarrito, clearCarrito, deleteCarrito}}>
+        <Toaster position="top-right" reverseOrder={false} />
         {children}
     </CartContext.Provider>
   )

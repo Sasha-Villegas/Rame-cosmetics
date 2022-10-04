@@ -77,9 +77,24 @@
     font-size: 25px;
 }
 
-cart-detail {
+.cart-detail {
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
+}
+
+
+.form {
+    margin: 1rem;
+    background-color: #A7C396;
+    color: #FFEBEB;
+    border: 1px solid #414b3b;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
 }
