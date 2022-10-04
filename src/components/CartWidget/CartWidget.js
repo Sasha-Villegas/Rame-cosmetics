@@ -1,7 +1,7 @@
 import React from 'react';  
 import "../Navbar/navbar.css";
 import Badge from 'react-bootstrap/Badge';
-import { CartContext } from "../../Context/CartContext";
+import { CartContext } from "../../context/CartContext";
 import { useContext } from "react";
 
 
