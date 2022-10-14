@@ -15,7 +15,7 @@ const Navbar = (props) => {
             <Link to={'/'}>
             <img className='logo' src='/images/Ramé.png' alt='logo rame' width='300' height='150'/> 
             </Link>
-            <a href="#lateral" className="header-open">
+            <a className="header-open">
                 <span className="fa-solid fa-bars"></span> 
             </a>
             <nav className="navba">

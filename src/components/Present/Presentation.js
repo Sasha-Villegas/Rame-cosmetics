@@ -1,5 +1,6 @@
 import React from "react";
 import "./Presentation.css"
+import { Link } from "react-router-dom";
 
 const Inicio = () => {  
 
@@ -7,13 +8,9 @@ const Inicio = () => {
 
     return (
        <>
-         <div className="Img-inicio"> 
-         <img src="/images/Hello.png" alt="Hello" />
-         </div>
          <div className="Inicio">
-            <h1>Welcome to Rame Cosmetics</h1>
-         </div>
-         <div className="subtitulo-inicio">
+            <img src="/images/Hello.png" alt="Hello" />
+            <Link to= {"/inicio"} className = "boton" > View products </Link>
          </div>
        </>
     );
