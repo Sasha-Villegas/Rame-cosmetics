@@ -3,9 +3,7 @@ import "./Presentation.css"
 import { Link } from "react-router-dom";
 
 const Inicio = () => {  
-
    
-
     return (
        <>
          <div className="Inicio">
