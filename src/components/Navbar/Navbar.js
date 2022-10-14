@@ -41,7 +41,7 @@ const Navbar = (props) => {
 
                         {cart.length !== 0 ? <Link to={`/cart`}> <CartWidget/> </Link> : null }
 
-                    <a href="#close" className="closeenlace"><i className="fa-solid fa-circle-xmark"></i></a>
+                    <a className="closeenlace"><i className="fa-solid fa-circle-xmark"></i></a>
                 </ul>
                 
             </nav>
