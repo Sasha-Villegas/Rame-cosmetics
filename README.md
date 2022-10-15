@@ -6,7 +6,7 @@
   </a>
 
   <p align="center">
-    It simulates an e-commerce of cosmectics, made naturally without preservatives and 100% vegan.
+    It simulates an e-commerce of cosmetics, made naturally without preservatives and 100% vegan.
     <br />
     <a href="https://github.com/Sasha-Villegas/Rame-cosmetics"><strong>Explore the docs »</strong></a>
     <br />
@@ -43,7 +43,7 @@ E-commerce app, developed by me, for the final project of React js course.
 
 ### Demo
 
-![Demo de una compra](https://github.com/Sasha-Villegas/Rame-cosmetics/blob/master/public/images/video-demo.mp4?raw=true)
+![Demo de una compra](https://github.com/Sasha-Villegas/Rame-cosmetics/master/public/images/video-demo.mp4?raw=true)
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -135,10 +135,10 @@ Sasha Hebe Villegas Basso -
 [forks-url]: https://github.com/Sasha-Villegas/Rame-cosmetics/network/members
 [stars-shield]: https://img.shields.io/github/stars/Sasha-Villegas/Rame-cosmetics.svg?style=for-the-badge
 [stars-url]: https://github.com/Sasha-Villegas/Rame-cosmetics/stargazers
-[issues-shield]: https://img.shields.io/github.com/issues/Sasha-Villegas/Rame-cosmetics.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Sasha-Villegas/Rame-cosmetics.svg?style=for-the-badge
 [issues-url]: https://github.com/Sasha-Villegas/Rame-cosmetics/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/miguel-laco
+[linkedin-url]: https://linkedin.com/in/sashavillegas
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
