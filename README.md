@@ -43,7 +43,7 @@ E-commerce app, developed by me, for the final project of React js course.
 
 ### Demo
 
-![Demo de una compra](https://github.com/Sasha-Villegas/Rame-cosmetics/master/public/images/video-demo.mp4?raw=true)
+![Demo de una compra](https://github.com/Sasha-Villegas/Rame-cosmetics/blob/master/public/images/video-demo.mp4?raw=true)
 
 <!-- TABLE OF CONTENTS -->
 <details>
