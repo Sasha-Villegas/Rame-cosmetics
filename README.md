@@ -81,6 +81,10 @@ E-commerce app, developed by me, for the final project of React js course.
 * [![Hot][Hot.com]][Hot-url]
 * [![Fire][Fire.com]][Fire-url]
 * [![Moment][Moment.com]][Moment-url]
+* [![CoffeeScript][CoffeeScript.js]][CoffeeScript-url]
+* [![JavaScript][JavaScript.com]][JavaScript-url]
+* [![CSS3][CSS3]][CSS3-url]
+* [![Visual Studio Code][Visual Studio Code]][Visual Studio Code-url]
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -143,6 +147,8 @@ Sasha Hebe Villegas Basso -
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
+[JavaScript.js]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
+[JavaScript-url]: https://javascript.com/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
@@ -161,3 +167,7 @@ Sasha Hebe Villegas Basso -
 [Fire-url]: https://firebase.google.com/
 [Moment.com]: https://img.shields.io/badge/Moment-blue?style=for-the-badge&logo=Cachet&logoColor=white
 [Moment-url]: https://momentjs.com/
+[CSS3]: (https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+[Visual Studio Code.]:(https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+
