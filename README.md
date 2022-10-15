@@ -1,70 +1,131 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
+<!-- PROJECT LOGO -->
+<div align="center">
+  <a href="https://github.com/Sasha-Villegas/Rame-cosmetics">
+    <img src="public/img/Ramé.png" alt="Logo" width="380" height="180">
+  </a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p align="center">
+    It simulates an e-commerce of cosmectics, made naturally without preservatives and 100% vegan.
+    <br />
+    <a href="https://github.com/Sasha-Villegas/Rame-cosmetics"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/Sasha-Villegas/Rame-cosmetics">View Demo</a>
+    ·
+    <a href="https://github.com/Sasha-Villegas/Rame-cosmetics/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/Sasha-Villegas/Rame-cosmetics/issues">Request Feature</a>
+  </p>
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-### `npm start`
+### Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+E-commerce app, developed by me, for the final project of React js course.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Author
 
-### `npm test`
+> Hi 👋, I'm Sasha Villegas :  
+[sashavillegas30@gmail.com](mailto:sashavillegas30@gmail.com)
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://www.linkedin.com/in/sashavillegas/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sashavillegas" height="30" width="40" /></a>
+<a href="https://www.instagram.com/sasha.v30/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sashav30" height="30" width="40" /></a>
+</p>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Demo
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Demo de una compra](https://github.com/Sasha-Villegas/Rame-cosmetics/blob/master/public/img/video-demo.mp4?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<!-- * [![Next][Next.js]][Next-url] -->
+<!-- * [![Vue][Vue.js]][Vue-url] -->
+<!-- * [![Angular][Angular.io]][Angular-url] -->
+<!-- * [![Svelte][Svelte.dev]][Svelte-url] -->
+<!-- * [![Laravel][Laravel.com]][Laravel-url] -->
+<!-- * [![JQuery][JQuery.com]][JQuery-url] -->
+* [![React][React.js]][React-url]
+* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Hot][Hot.com]][Hot-url]
+* [![Fire][Fire.com]][Fire-url]
+* [![Moment][Moment.com]][Moment-url]
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Sasha-Villegas/Rame-cosmetics.git
+   ```
+3. Install NPM packages
+   ```sh
+   npm install
+   ```
+4. Run the APP
+   ```js
+   npm start;
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<!-- CONTACT -->
+## Contact
 
-### Analyzing the Bundle Size
+Sasha Hebe Villegas Basso - 
+<p align="left">
+<a href="https://www.linkedin.com/in/sashavillegas/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sashavillegas" height="30" width="40" /></a>
+<a href="https://www.instagram.com/sasha.v30/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sashav30" height="30" width="40" /></a>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* ### Professor [ Juan Magos ](https://github.com/JuanMagos)
 
-### Advanced Configuration
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
