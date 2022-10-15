@@ -81,7 +81,6 @@ E-commerce app, developed by me, for the final project of React js course.
 * [![Hot][Hot.com]][Hot-url]
 * [![Fire][Fire.com]][Fire-url]
 * [![Moment][Moment.com]][Moment-url]
-*
 * [![JavaScript][JavaScript.com]][JavaScript-url]
 * [![CSS3][CSS3.com]][CSS3-url]
 * [![VisualStudioCode][VisualStudioCode.com]][VisualStudioCode-url]
@@ -147,7 +146,7 @@ Sasha Hebe Villegas Basso -
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[JavaScript.js]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
+[JavaScript.com]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
 [JavaScript-url]: https://javascript.com/
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
