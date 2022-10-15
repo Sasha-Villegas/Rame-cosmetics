@@ -135,7 +135,7 @@ Sasha Hebe Villegas Basso -
 [forks-url]: https://github.com/Sasha-Villegas/Rame-cosmetics/network/members
 [stars-shield]: https://img.shields.io/github/stars/Sasha-Villegas/Rame-cosmetics.svg?style=for-the-badge
 [stars-url]: https://github.com/Sasha-Villegas/Rame-cosmetics/stargazers
-[issues-shield]: https://img.shields.io/github.com/Sasha-Villegas/Rame-cosmetics.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github.com/issues/Sasha-Villegas/Rame-cosmetics.svg?style=for-the-badge
 [issues-url]: https://github.com/Sasha-Villegas/Rame-cosmetics/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/miguel-laco
